@@ -19,17 +19,22 @@ export default function App() {
    <Text style={styles.fameli}>Семейный ресторан</Text>
    <Text style={styles.fameli}>08:00 - 22:00</Text>
    
+      <View style={{height:'20%'}}/>
 
-<View style={{justifyContent:'center'}}>
    <View style={styles.screenContainer}>
-      <Button title="Hey there!" />
+      <Button title="Sign in with Number" color="#000"/>
     </View>
     <View style={styles.screenContainer2}>
-      <Button title="Hey there!"  style={{textAlign:'center', justifyContent:'center'}}/>
+      <Button title="Sign in with Apple" color="#000" />
     </View>
     </View>
+
+
+
+
+   
     
-    </View>
+  
 </ImageBackground>
   );
 }
@@ -72,9 +77,11 @@ const styles = StyleSheet.create({
      
       width:'80%',
       height:'13%',
-      backgroundColor:'#fff',
+      backgroundColor:'rgb(220,220,220)',
      alignSelf:'center',
      borderRadius:'20',
+     borderColor:'#fff',
+     borderWidth:'2',
     
     },
 
@@ -82,11 +89,14 @@ const styles = StyleSheet.create({
       marginTop:'10%',
       width:'80%',
       height:'13%',
-      backgroundColor:'#fff',
+      backgroundColor:'rgb(220,220,220)',
      alignSelf:'center',
       alignItems:'center',
      borderRadius:'20',
-    
+     borderColor:'#fff',
+     borderWidth:'2',
+  
+   
     },
    
 });
