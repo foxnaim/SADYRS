@@ -18,10 +18,18 @@ export default function App() {
     <View style={{ alignSelf:'center', width:"15%", height:'1%', backgroundColor:'#fff', borderRadius:10,}}/>
    <Text style={styles.fameli}>Семейный ресторан</Text>
    <Text style={styles.fameli}>08:00 - 22:00</Text>
-   <Button title="Sign in with Number" onPress={() => alert.alert('Simple Button pressed')}  style={styles.Button_Number} />
-      <Button title="Sign in with Apple" onPress={() => alert.alert('Simple Button pressed')}
-      />
-   </View>
+   
+
+
+   <View style={styles.screenContainer}>
+      <Button title="Hey there!" />
+    </View>
+    <View style={styles.screenContainer2}>
+      <Button title="Hey there!" />
+    </View>
+    
+    
+    </View>
 </ImageBackground>
   );
 }
@@ -60,7 +68,22 @@ const styles = StyleSheet.create({
     textAlign:'center',
     },
     
-    Button_Number:{
-      backgroundColor:'rgba(0,0,0,0.5)',
+    screenContainer:{
+      
+      width:'80%',
+      height:'10%',
+      backgroundColor:'#fff',
+     alignSelf:'center',
+     borderRadius:'20',
+    
     },
+
+    screenContainer2:{
+      width:'80%',
+      height:'10%',
+      backgroundColor:'#fff',
+     alignSelf:'center',
+     borderRadius:'20',
+    },
+   
 });
