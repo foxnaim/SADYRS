@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, View, Image, Button} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import bgOl from './assets/bg.png';
 
 
@@ -20,6 +21,7 @@ export default function App() {
       <View style={{height:'20%'}}/>
 
    <View style={styles.screenContainer}>
+    
       <Button title="Sign in with Number" color="#fff"/>
     </View>
     <View style={styles.screenContainer2}>
