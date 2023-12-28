@@ -2,9 +2,7 @@ import React from 'react';
 import { ImageBackground, StyleSheet, Text, View, Image, Button} from 'react-native';
 import bgOl from './assets/bg.png';
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Handlee&family=Sansita&display=swap');
-</style>
+
 
 
 
@@ -22,10 +20,10 @@ export default function App() {
       <View style={{height:'20%'}}/>
 
    <View style={styles.screenContainer}>
-      <Button title="Sign in with Number" color="#000"/>
+      <Button title="Sign in with Number" color="#fff"/>
     </View>
     <View style={styles.screenContainer2}>
-      <Button title="Sign in with Apple" color="#000" />
+      <Button title="Sign in with Apple" color="#fff" />
     </View>
     </View>
 
@@ -77,10 +75,10 @@ const styles = StyleSheet.create({
      
       width:'80%',
       height:'13%',
-      backgroundColor:'rgb(220,220,220)',
+      backgroundColor:'rgba(0,0,0,0.5)',
      alignSelf:'center',
      borderRadius:'20',
-     borderColor:'#fff',
+     borderColor:'pink',
      borderWidth:'2',
     
     },
@@ -89,11 +87,11 @@ const styles = StyleSheet.create({
       marginTop:'10%',
       width:'80%',
       height:'13%',
-      backgroundColor:'rgb(220,220,220)',
+      backgroundColor:'rgba(0,0,0,0.5)',
      alignSelf:'center',
       alignItems:'center',
      borderRadius:'20',
-     borderColor:'#fff',
+     borderColor:'pink',
      borderWidth:'2',
   
    
