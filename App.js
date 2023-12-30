@@ -1,6 +1,6 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, View, Image, Button} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+
 import bgOl from './assets/bg.png';
 
 
