@@ -19,12 +19,10 @@ export default function App() {
    <Text style={styles.fameli}>08:00 - 22:00</Text>
    
      
-
+     <View style={{flex:0.1,}}/>
    
-      <TextInput  placeholder="Number" color="#fff" style={styles.Number}/>
+      <TextInput  placeholder="8(777)999 20 22" keyboardType='numeric' placeholderTextColor="#fff" style={styles.Number}/>
    
-        <TextInput secureTextEntry={true} placeholder="Password" color="#fff"  style={styles.Password}/>
-
     <View style={styles.Button}>
     <Button title="Sign in with Number" color="#fff" onClick={''} />
     </View>
@@ -83,26 +81,13 @@ const styles = StyleSheet.create({
       color:"#fff",
       backgroundColor:'rgba(0, 0, 0, 0.3)',
       width:'70%',
-      height:'10%',
+      height:'13%',
       borderRadius:30,
       borderWidth:2,
       borderColor:'#000',
     },
    
-   Password:{
-    display:'flex',
-    marginTop:'10%',
-      justifyContent:'center',
-      alignSelf:"center",
-      textAlign:'center',
-      color:"#fff",
-      backgroundColor:'rgba(0, 0, 0, 0.3)',
-      width:'70%',
-      height:'10%',
-      borderRadius:30,
-      borderWidth:2,
-      borderColor:'#000',
-   },
+  
 
    Button:{
     display:'flex',
