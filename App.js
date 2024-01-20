@@ -90,8 +90,8 @@ const styles = StyleSheet.create({
   
 
    Button:{
-    display:'flex',
-    marginTop:'5%',
+      display:'flex',
+      marginTop:'5%',
       justifyContent:'center',
       alignSelf:"center",
       color:"#fff",
