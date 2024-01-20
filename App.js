@@ -18,7 +18,7 @@ export default function App() {
    <Text style={styles.fameli}>Семейный ресторан</Text>
    <Text style={styles.fameli}>08:00 - 22:00</Text>
    
-      <View style={{height:'20%'}}/>
+      <View style={{height:'20%', marginBottom:'30',}}/>
 
    <View style={styles.screenContainer}>
     
@@ -56,9 +56,9 @@ const styles = StyleSheet.create({
     map:{
       width:'100%',
       height:'45%',
-      backgroundColor:'rgba(0,0,0,0.5)',
+  
       borderTopColor:'#000',
-      borderWidth: 2,
+      
       
       flex:'0.7', 
     },
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
       backgroundColor:'rgba(0,0,0,0.5)',
      alignSelf:'center',
      borderRadius:'20',
-     borderColor:'pink',
+     borderColor:'#00fffc',
      borderWidth:'2',
     
     },
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
      alignSelf:'center',
       alignItems:'center',
      borderRadius:'20',
-     borderColor:'pink',
+     borderColor:'#00fffc',
      borderWidth:'2',
   
    
