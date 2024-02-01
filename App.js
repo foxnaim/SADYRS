@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, StyleSheet, Text, View, Image, Button, TextInput} from 'react-native';
+import { ImageBackground, StyleSheet, Text, View, Image, Button, TextInput, ScrollView} from 'react-native';
 
 import bgOl from './assets/bg.png';
 
@@ -12,24 +12,22 @@ export default function App() {
   return (
 
     <ImageBackground source={bgOl} style={styles.container}>
+      
    <Image style={styles.stretch} source={require('./assets/logo.png')}/>
    <View style={styles.map}>
-    <View style={{ alignSelf:'center', width:"15%", height:'1%', backgroundColor:'#fff', borderRadius:10,}}/>
-   <Text style={styles.fameli}>Семейный ресторан</Text>
+   
+   <ScrollView contentContainerStyle={{flexGrow: 1}} keyboardShouldPersistTaps='handled'>
+   <View style={{ alignSelf:'center', width:"15%", height:'1%', backgroundColor:'#fff', borderRadius:10,}}/>
+   <Text style={styles.fameli}  >Семейный ресторан</Text>
    <Text style={styles.fameli}>08:00 - 22:00</Text>
    
-     
      <View style={{flex:0.1,}}/>
-   
-      <TextInput  placeholder="8(777)999 20 22" keyboardType='numeric' placeholderTextColor="#fff" style={styles.Number}/>
-   
+ 
+      <TextInput  placeholder="8(777)999 20 22"   keyboardType="numeric"  placeholderTextColor="#666" style={styles.Number}/>
     <View style={styles.Button}>
     <Button title="Sign in with Number" color="#fff" onClick={''} />
     </View>
-    
-   
-  
-  
+    </ScrollView>
   </View>
 
 </ImageBackground>
@@ -57,13 +55,12 @@ const styles = StyleSheet.create({
     },
 
     fameli:{
-      flex:'0.2',
+      flex:0.2,
     color:"#FFF",
     fontFamily: 'Sansita',
-    fontSize:"30%",
+    fontSize:30,
     fontStyle: 'normal', 
     fontWeight: '400',
-    lineHeight: 'normal',
     textAlign:'center',
     },
     
